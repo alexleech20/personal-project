@@ -6,12 +6,12 @@ import Typography from '@mui/joy/Typography';
 import Grid from '@mui/material/Grid2';
 import ReusableCard from './components/atoms/cardComponent/reusableCard.component';
 
-// import pcwImagery from './components/atoms/cardComponents/assets/PCWScreenshot.png';
-// import fleetImagery from './components/atoms/cardComponents/assets/FleetScreenshot.png';
-// import maydayImagery from './components/atoms/cardComponents/assets/MaydayScreenshot.png';
-// import euroImagery from './components/atoms/cardComponents/assets/EuroScreenshot.png';
-// import pcseImagery from './components/atoms/cardComponents/assets/PCSEScreenshot.png';
-// import barnetImagery from './components/atoms/cardComponents/assets/BarnetScreenshot.png';
+import pcwImagery from './assets/PCWScreenshot.png';
+import fleetImagery from './assets/FleetScreenshot.png';
+import maydayImagery from './assets/MaydayScreenshot.png';
+import euroImagery from './assets/EuroScreenshot.png';
+import pcseImagery from './assets/PCSEScreenshot.png';
+import barnetImagery from './assets/BarnetScreenshot.png';
 
 import { StyledEngineProvider } from '@mui/material/styles'
 
@@ -34,7 +34,7 @@ function App() {
           <Grid container spacing={2} sx={{ paddingTop: '2rem'}}>
             <Grid size={{ xs: 12, md: 4 }}>
               <ReusableCard 
-                // imagery={euroImagery}
+                imagery={euroImagery}
                 companyTitle={'Direct Line Group'}
                 siteName={'Euro'}
                 imageAltText='Euro.Greenflag.com website'
@@ -45,7 +45,7 @@ function App() {
             </Grid>
             <Grid size={{ xs: 12, md: 4 }}>
               <ReusableCard 
-                // imagery={maydayImagery}
+                imagery={maydayImagery}
                 companyTitle='Direct Line Group'
                 siteName='Mayday'
                 imageAltText='Mayday.Greenflag.com website'
@@ -56,7 +56,7 @@ function App() {
             </Grid>
             <Grid size={{ xs: 12, md: 4}}>
               <ReusableCard 
-                // imagery={fleetImagery}
+                imagery={fleetImagery}
                 companyTitle='Direct Line Group'
                 siteName='Fleet (Coming soon)'
                 imageAltText='Fleet.Greenflag.com website'
@@ -67,7 +67,7 @@ function App() {
           <Grid container spacing={2} sx={{ paddingTop: '2rem'}}>
             <Grid size={{ xs: 12, md: 4 }}>
               <ReusableCard 
-                // imagery={pcwImagery}
+                imagery={pcwImagery}
                 companyTitle='Direct Line Group'
                 siteName='PCW (Only reachable through comparison creators)'
                 imageAltText='Quote.Greenflag.com website'
@@ -76,7 +76,7 @@ function App() {
             </Grid>
             <Grid size={{ xs: 12, md: 4 }}>
               <ReusableCard 
-                // imagery={barnetImagery}
+                imagery={barnetImagery}
                 companyTitle='Barnet Council'
                 siteName='Barnet'
                 imageAltText='Barnet.gov.uk website'
@@ -87,7 +87,7 @@ function App() {
             </Grid>
             <Grid size={{ xs: 12, md: 4 }}>
               <ReusableCard 
-                // imagery={pcseImagery}
+                imagery={pcseImagery}
                 companyTitle='Primary Care Support England'
                 siteName='PCSE'
                 imageAltText='pcse.england.nhs.uk website'
