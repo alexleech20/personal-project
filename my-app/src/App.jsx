@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import Header from './header.component'
-// import MaydayCard from './components/atoms/cardComponents/maydayCard.component'
 import Typography from '@mui/joy/Typography';
 import Grid from '@mui/material/Grid2';
 import ReusableCard from './components/atoms/cardComponent/reusableCard.component';
@@ -22,11 +21,11 @@ function App() {
       <StyledEngineProvider injectFirst>
         <Header />
         {/* ToDo: Welcome section here */}
-        <div style={{ backgroundColor: '#1B7A61', padding: '1rem'}}>
+        <div style={{ backgroundColor: '#1B7A61', padding: '1rem' }}>
           <Grid container>
             <Grid size={{ xs: 1 }}></Grid>
             <Grid size={{ xs: 10}}>
-              <Typography sx={{ paddingBottom: '2rem' }}>
+              <Typography className="outfit" sx={{ paddingBottom: '2rem' }}>
                 What I've been working on recently
               </Typography>
             </Grid>
@@ -99,7 +98,6 @@ function App() {
           </Grid>
         </div>
       </StyledEngineProvider>
-      
       
       {/* want to render header component and footer here, then 'children' between */}
       

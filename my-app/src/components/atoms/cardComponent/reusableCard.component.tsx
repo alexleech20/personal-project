@@ -32,34 +32,34 @@ export const reusableCard: React.FC<IReusableCardInterface> = ({
           <img
             src={imagery}
             loading="lazy"
-            alt=""
+            alt={imageAltText}
           />
         </CardOverflow>
         {hasLinks === true ? (
           <CardContent>
-          <Typography sx={{ color: 'black' }} level="title-md">
+          <Typography className="outfit" sx={{ color: 'black' }} level="title-md">
             <Link href={siteLink} rel="noreferrer" target="_blank" overlay underline="none" sx={{ color: 'black' }}>
               {companyTitle}
             </Link>
           </Typography>
-          <Typography sx={{ color: 'black' }} level="body-sm">
+          <Typography className="outfit" sx={{ color: 'black' }} level="body-sm">
             <Link href="#multiple-actions" sx={{ color: 'black' }}>
               {siteName}
             </Link>
           </Typography>
-          <Typography sx={{ color: 'black', paddingTop: '.75rem'}} level="body-sm">
+          <Typography className="outfit" sx={{ color: 'black', paddingTop: '.75rem'}} level="body-sm">
             {technologyUsed}
           </Typography>
         </CardContent>
         ) : (
           <CardContent>
-            <Typography sx={{ color: 'black' }} level="title-md">
+            <Typography className="outfit" sx={{ color: 'black' }} level="title-md">
               {companyTitle}
             </Typography>
-            <Typography sx={{ color: 'black' }} level="body-sm">
+            <Typography className="outfit" sx={{ color: 'black' }} level="body-sm">
               {siteName}
             </Typography>
-            <Typography sx={{ color: 'black', paddingTop: '.75rem' }} level="body-sm">
+            <Typography className="outfit" sx={{ color: 'black', paddingTop: '.75rem' }} level="body-sm">
               {technologyUsed}
             </Typography>
           </CardContent>
